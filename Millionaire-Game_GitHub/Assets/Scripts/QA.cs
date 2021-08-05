@@ -183,8 +183,10 @@ public class QA : MonoBehaviour
         int randomAnswer = Random.Range(1,6);
         print("you get randomAnswer = " + randomAnswer);
         helperAskbutton.SetActive(false);
+
         correctAnswerAsk[0] = GameObject.FindGameObjectWithTag("CorrectAnswer");
         wrongAnswerAsk[0] = GameObject.FindGameObjectWithTag("WrongAnswer");
+
         if (randomAnswer >= 1 && randomAnswer <= 2) // 40%
         {
             conversationText.text = "The correct Answer is ''" + correctAnswerAsk[0].name + "'' I'am very sure!!";
