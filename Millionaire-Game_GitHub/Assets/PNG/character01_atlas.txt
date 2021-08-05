@@ -1,0 +1,97 @@
+
+character01.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm
+  rotate: false
+  xy: 390, 332
+  size: 192, 279
+  orig: 192, 279
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 349, 613
+  size: 389, 405
+  orig: 389, 405
+  offset: 0, 0
+  index: -1
+chest
+  rotate: true
+  xy: 165, 266
+  size: 287, 223
+  orig: 287, 223
+  offset: 0, 0
+  index: -1
+eye brawn
+  rotate: false
+  xy: 390, 303
+  size: 189, 27
+  orig: 189, 27
+  offset: 0, 0
+  index: -1
+eyelid
+  rotate: true
+  xy: 391, 111
+  size: 190, 75
+  orig: 190, 75
+  offset: 0, 0
+  index: -1
+face
+  rotate: true
+  xy: 584, 381
+  size: 230, 215
+  orig: 230, 215
+  offset: 0, 0
+  index: -1
+glasses
+  rotate: false
+  xy: 584, 310
+  size: 203, 69
+  orig: 203, 69
+  offset: 0, 0
+  index: -1
+hair back01
+  rotate: false
+  xy: 740, 655
+  size: 154, 363
+  orig: 154, 363
+  offset: 0, 0
+  index: -1
+hair back02
+  rotate: false
+  xy: 2, 555
+  size: 345, 463
+  orig: 345, 463
+  offset: 0, 0
+  index: -1
+hair fornt01
+  rotate: false
+  xy: 896, 712
+  size: 122, 306
+  orig: 122, 306
+  offset: 0, 0
+  index: -1
+hair fornt02
+  rotate: false
+  xy: 801, 348
+  size: 96, 305
+  orig: 96, 305
+  offset: 0, 0
+  index: -1
+hair fornt03
+  rotate: false
+  xy: 2, 123
+  size: 161, 430
+  orig: 161, 430
+  offset: 0, 0
+  index: -1
+hair front
+  rotate: false
+  xy: 165, 46
+  size: 224, 218
+  orig: 224, 218
+  offset: 0, 0
+  index: -1
