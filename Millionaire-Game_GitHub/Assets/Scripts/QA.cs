@@ -156,8 +156,6 @@ public class QA : MonoBehaviour
     {
         score = 0;
         conversationTime = 0;
-        //QuestionText[0].SetActive(false);
-        //startQuestion = false;
         halperTimebutton.SetActive(true);
         halperWrongbutton.SetActive(true);
         helperAskbutton.SetActive(true);
@@ -187,16 +185,16 @@ public class QA : MonoBehaviour
         helperAskbutton.SetActive(false);
         correctAnswerAsk[0] = GameObject.FindGameObjectWithTag("CorrectAnswer");
         wrongAnswerAsk[0] = GameObject.FindGameObjectWithTag("WrongAnswer");
-        if (randomAnswer >= 1 && randomAnswer <= 2)
+        if (randomAnswer >= 1 && randomAnswer <= 2) // 40%
         {
             conversationText.text = "The correct Answer is ''" + correctAnswerAsk[0].name + "'' I'am very sure!!";
         }
-        if (randomAnswer >= 3 && randomAnswer <= 4)
+        if (randomAnswer >= 3 && randomAnswer <= 4) //40%
         {
             AnimationTrigger(2);
             conversationText.text = "Hmmm.... i'am not sure. but i think ''" + wrongAnswerAsk[0].name + "'' is correct... i guess..";
         }
-        if (randomAnswer == 5)
+        if (randomAnswer == 5) // 20 %
         {
             AnimationTrigger(4);
             conversationText.text = "Sorry..... I don't know anything of this question. gomennasai!!!! >,<'";
@@ -208,9 +206,11 @@ public class QA : MonoBehaviour
         AnimationTrigger(3);
         ConversationStart(20, false, false, false);
         halperWrongbutton.SetActive(false);
+
         wrongAnswer = GameObject.FindGameObjectsWithTag("WrongAnswer");
         wrongAnswer[0].SetActive(false);
         wrongAnswer[1].SetActive(false);
+
         conversationText.text = "Hehe... Okay, I'll delete 2 wrong answers. Make sure you pick the right choice!";
     }
 

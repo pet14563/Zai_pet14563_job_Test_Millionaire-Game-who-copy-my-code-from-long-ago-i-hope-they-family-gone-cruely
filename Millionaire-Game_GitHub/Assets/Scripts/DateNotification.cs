@@ -26,6 +26,7 @@ public class DateNotification : MonoBehaviour
     public float minuteSetting;
     public float hourSetting;
 
+    // for setting time 
     public float secHourSetting;
     public float secMinuteSetting;
     public float settingTotalTime;
@@ -52,13 +53,16 @@ public class DateNotification : MonoBehaviour
 
         if (passtotaltime >= settingTotalTime && passtotaltime <= settingTotalTime)
         {
-            menuScripts.canplay = true;
+            menuScripts.canplay = true; // can press play button on menu
         }
         currenttime = System.DateTime.UtcNow.ToLocalTime().ToString("HH:mm");
         timeTextNow.text = "" + currenttime + "";
+
+        //update time to sec
         DayTimetoSec();
         HourMinSettingtoSec();
 
+        // show text
         hourText.text = ""+ hourSetting;
         minText.text = "" + minuteSetting;
     }
@@ -80,6 +84,7 @@ public class DateNotification : MonoBehaviour
         settingTotalTime = secHourSetting + secMinuteSetting; //the sec time we setting start from 00 : 00
     }
 
+    //time + - Settings button
     public void PressHourSettingUp()
     {
         if (hourSetting <= 23)
